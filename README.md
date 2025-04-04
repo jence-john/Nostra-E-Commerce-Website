@@ -6,17 +6,17 @@
 
 ---
 
-## 📌 Features
+##  Features
 
 -  Fully responsive and mobile-friendly design
 -  **Search and filter** functionality to easily find products
 -  Product grid with category-based filtering
-- 🧭 Smooth navigation and scroll effects
-- 🎨 Stylish and modern UI built with Tailwind CSS
+-  Smooth navigation and scroll effects
+-  Stylish and modern UI built with Tailwind CSS
 
 ---
 
-## 🚀 Tech Stack
+##  Tech Stack
 
 - **HTML5**
 - **Tailwind CSS**
@@ -30,13 +30,6 @@ You can access my Nostra website by visiting  https://jence-john.github.io/Nostr
 
 
 
-
 Thank you for visiting my Nostra website!
 
 
-
-
-
- 
- 
- https://jence-john.github.io/Nostra-E-Commerce-Website/
