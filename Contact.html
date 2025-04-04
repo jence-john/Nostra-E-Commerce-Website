@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosta</title>
+    <!-- Tailwind CSS CDn Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Responsive Navbar -->
+    <nav class="bg-white flex items-center justify-between  text-gray-800 sticky top-0 z-10">
+        <!-- Navbar Logo -->
+        <h1 class="font-black text-2xl m-5 text-gray-800">Nostra</h1>
+
+        <!-- Navbar Heading responsive -->
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" v1iewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 md:hidden cursor-pointer">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <!-- Navbar heading -->
+
+        <ul class="gap-20 hidden md:flex">
+            <li class="hover:underline cursor-pointer ">
+                <a href="index.html" target="_self"> Home</a>
+
+            </li>
+
+
+            <li class=" cursor-pointer hover:underline ">
+                <a href="Collection.html" target="_self">
+                    Collection
+                </a>
+            </li>
+
+            <li class="hover:underline cursor-pointer mr-5">
+                <a href="Contact.html" target="_self">
+                    Contact Us
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+        <!-- side bar -->
+        <section id="sidebar" class="bg-gray-900  text-white fixed z-20 top-0 right-0 transition-all duration-1000"style="width:50%;height:100vh;right:-50%;">
+            <div class="text-right">
+                <p id="cancel" class=" text-2xl font-bold p-5 text-white  inline cursor-pointer">X</p>
+            </div>
+            <ul class=" gap-20  mt-6 m-10    md:flex">
+                <li class="p-5 hover:underline cursor-pointer ">
+                    <a href="index.html" target="_self"> Home</a>
+
+                </li>
+
+                <li class="p-5 hover:underline cursor-pointer">
+                    <a href="Collection.html" target="_self">
+                        Collection
+                    </a>
+                </li>
+
+                <li class="p-5 hover:underline cursor-pointer mr-5">
+                    <a href="Contact.html" target="_self">
+                        Contact Us
+                    </a>
+                </li>
+
+            </ul>
+        </section>
+  
+
+
+<!-- Contact form -->
+
+<section class="bg-white dark:bg-gray-900">
+    <div class="py-8 md::py-16 px-4 mx-auto max-w-screen-md">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
+        <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Have questions or need assistance? Feel free to reach out to us!</p>
+        <form action="#" class="space-y-8 bg-gray-900 p-7 rounded-lg">
+            <div >
+                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 " placeholder="Enter Your Email" required>
+            </div>
+            <div>
+                <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500" placeholder="Let us know how we can help you" required>
+            </div>
+            <div class="sm:col-span-2">
+                <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 " placeholder="Leave a comment..."></textarea>
+            </div>
+            <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-black sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300">Send message</button>
+        </form>
+    </div>
+  </section>
+
+
+  
+
+    <!-- Fotter -->
+
+    <footer class="bg-gray-800 text-white py-10 ">
+        <h1 class="font-bold text-3xl m-5">Nostra</h1>
+        <p class="text-xs md:mt-3 lg:text-lg m-5">
+            Stay trendy with Nostra! Shop stylish, high-quality fashion with fast & free shipping.
+            Elevate your wardrobe effortlessly!
+        </p>
+
+        <div class="flex  gap-6 mt-10 m-5">
+            <i class="fa-brands fa-instagram fa-2x cursor-pointer" style="color: #ffffff; "></i>
+            <i class="fa-brands fa-facebook fa-2x cursor-pointer" style="color: #ffffff; "></i>
+            <i class="fa-brands fa-twitter fa-2x cursor-pointer" style="color: #ffffff; "></i>
+        </div>
+
+        <p class="mt-10 m-5 text-xl">&copy; 2025 Nostra.com</p>
+    </footer>
+
+
+
+
+
+    <script src="index.js"></script>
+
+
+</body>
+</html>   
+

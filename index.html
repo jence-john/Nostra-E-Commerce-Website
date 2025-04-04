@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosta</title>
+    <!-- Tailwind CSS CDn Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- offer and sign in -->
+
+    <div id="offer_close" class="bg-gray-900 text-white flex justify-center items-center">
+        <h1>Signup and <h1 class="p-2 text-xl font-bold">GET 20% OFF</h1>for your first Order</h1>
+        <p id="X_close" class=" absolute z-10 text-2xl p-2 right-1 hoverd:text-red-700 cursor-pointer md:right-96 ">X
+        </p>
+    </div>
+
+    <!-- Responsive Navbar -->
+    <nav class="bg-white flex items-center justify-between  text-gray-800 sticky top-0 z-10">
+        <!-- Navbar Logo -->
+        <h1 class="font-black text-2xl m-5 text-gray-800">Nostra</h1>
+
+        <!-- Navbar Heading responsive -->
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" v1iewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 md:hidden cursor-pointer">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <!-- side bar -->
+        <section id="sidebar" class="bg-gray-900  text-white fixed z-20 top-0 left-0 transition-all duration-1000"
+            style="width:50%;height:100vh;left:-70%;">
+            <div class="text-right">
+                <p id="cancel" class=" text-2xl font-bold p-5 text-white  inline cursor-pointer  hover:text-red-700  ">X
+                </p>
+            </div>
+            <ul class=" gap-20  mt-6 m-10    md:flex">
+                <li class="p-5 hover:underline cursor-pointer ">
+                    <a href="index.html" target="_self"> Home</a>
+
+                </li>
+
+                <li class=" p-5 hover:underline cursor-pointer">
+                    <a id="neww">
+                        New Arrival
+                    </a>
+                </li>
+
+                <li class=" p-5 hover:underline cursor-pointer">
+                    <a id="mostt">
+                        Most Wanted
+                    </a>
+                </li>
+
+                <li class="p-5 hover:underline cursor-pointer">
+                    <a href="Collection.html" target="_self">
+                        Collection
+                    </a>
+                </li>
+
+                <li class="p-5 hover:underline cursor-pointer ">
+                    <a href="Contact.html" target="_self">
+                        Contact Us
+                    </a>
+                </li>
+
+            </ul>
+        </section>
+        <!-- Navbar heading -->
+
+        <ul class=" gap-20 hidden md:flex">
+            <li class="hover:underline cursor-pointer ">
+                <a href="index.html" target="_self"> Home</a>
+
+            </li>
+
+            <li class="hover:underline cursor-pointer">
+                <a id="new">
+                    New Arrival
+                </a>
+            </li>
+
+            <li class="hover:underline cursor-pointer">
+                <a id="most">
+                    Most Wanted
+                </a>
+            </li>
+
+            <li class="hover:underline cursor-pointer">
+                <a href="Collection.html" target="_self">
+                    Collection
+                </a>
+            </li>
+
+            <li class="hover:underline cursor-pointer mr-5">
+                <a href="Contact.html" target="_self">
+                    Contact Us
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+    </section>
+
+
+    <!-- Offer Image -->
+
+    <section class="relative flex justify-center items-center ">
+
+        <!-- Image -->
+        <div class="bg-slate-500">
+            <img class="w-full  p-2 rounded-xl opacity-70 " src="./Images/1(1).png" alt="Offer Image">
+        
+        </div>
+
+
+        <!-- Overlay Content -->
+        <div class="absolute  flex flex-col justify-center items-center text-center">
+            <h1 class="text-xl md:text-5xl lg:text-7xl font-bold text-black ">
+                Level up your style with our
+            </h1>
+            <p class="text-sm md:text-2xl font-bold mt-2 text-black ">
+                Collection
+            </p>
+
+            <button
+                class="mt-4 flex items-center bg-white text-black p-2 md:p-3 rounded-3xl shadow-lg hover:bg-gray-200 transition">
+                Shop Now
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-5 md:w-6 ml-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+            </button>
+
+              
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Brands -->
+    <section>
+        <h1 class=" m-5 md:m-5 mt-7 font-bold text-2xl mb-9 ">Brands</h1>
+
+        <div class="flex items-center justify-evenly  gap-8 m-5 ">
+
+            <div class="flex flex-col items-center text-center justify-center">
+
+                <img class="w-7 text-xs  md:w-16" src="./Images/puma.png" alt="Puma">
+                <h1 class="text-xs mt-4 md:text-xl ">Puma</h1>
+
+            </div>
+
+            <div class="flex flex-col items-center text-center justify-center">
+
+                <img class="w-7 md:w-16" src="./Images/adidas.png" alt="Adidas">
+                <h1 class="text-xs mt-3 md:text-xl ">Adidas</h1>
+
+            </div>
+
+            <div class="flex flex-col items-center text-center justify-center">
+
+                <img class="w-7 md:w-24" src="./Images/allen solly.png" alt="Allen Solly">
+                <h1 class="text-xs mt-4 md:text-xl ">Allen Solly</h1>
+
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+
+                <img class="w-7 md:w-16" src="./Images/channel.png" alt="Chanel">
+                <h1 class="text-xs mt-3 md:text-xl ">Chanel</h1>
+
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+
+                <img class="w-7 md:w-16" src="./Images/nike.png" alt="Nike">
+                <h1 class="text-xs mt-3 md:text-xl ">Nike</h1>
+
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+
+                <img class="w-7 md:w-16" src="./Images/reebok.png" alt="Reebok">
+                <h1 class="text-xs mt-3 md:text-xl ">Reebok</h1>
+
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+
+                <img class="w-7 md:w-16" src="./Images/rolex.png" alt="Rolex">
+                <h1 class="text-xs mt-2 md:text-xl ">Rolex</h1>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Customer Serive -->
+
+    <section>
+        <div class="flex  md:flex-row items-center  justify-between mt-16 m-5 ">
+            <!-- Left Side Heading -->
+            <h1 class="text-xl md:text-4xl font-bold text-left">
+                We Provide Best Customer Experiences
+            </h1>
+
+            <!-- Right Side Subtext -->
+            <h1 class="text-xl md:text-xl  text-right">
+                || We ensure that our customers have the best shopping experience
+            </h1>
+        </div>
+    </section>
+
+    <!-- How we -->
+    <section>
+        <div class=" m-5 grid grid-cols-1 md:grid-cols-4 gap-6 mt-10">
+            <!-- Card 1 -->
+            <div class="bg-gray-200 p-4 rounded-xl ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-12 t ">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+                <h1 class="font-bold text-lg mb-2">Original Products</h1>
+                <p class="text-sm text-gray-700">We guarantee 100% authentic and high-quality products from top
+                    brands.Shop with confidence knowing you're getting the real deal, every time.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-gray-200 p-4 rounded-xl ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-12 ">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+                </svg>
+                <h1 class="font-bold text-lg mb-2">Satisfaction Guarantee</h1>
+                <p class="text-sm text-gray-700">Your happiness is our priority! If you're not satisfied with your
+                    purchase,we offer easy returns andexchanges to ensure a hassle-free shopping experience.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-gray-200 p-4 rounded-xl ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-10 ">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 3.75v16.5M2.25 12h19.5M6.375 17.25a4.875 4.875 0 0 0 4.875-4.875V12m6.375 5.25a4.875 4.875 0 0 1-4.875-4.875V12m-9 8.25h16.5a1.5 1.5 0 0 0 1.5-1.5V5.25a1.5 1.5 0 0 0-1.5-1.5H3.75a1.5 1.5 0 0 0-1.5 1.5v13.5a1.5 1.5 0 0 0 1.5 1.5Zm12.621-9.44c-1.409 1.41-4.242 1.061-4.242 1.061s-.349-2.833 1.06-4.242a2.25 2.25 0 0 1 3.182 3.182ZM10.773 7.63c1.409 1.409 1.06 4.242 1.06 4.242S9 12.22 7.592 10.811a2.25 2.25 0 1 1 3.182-3.182Z" />
+                </svg>
+                <h1 class="font-bold text-lg mb-2">New Arrivals Every Day</h1>
+                <p class="text-sm text-gray-700">Stay ahead of the trends! Discover fresh collections daily,featuring
+                    the latest fashion, accessories, and must-have items curated just for you.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-gray-200 p-4 rounded-xl ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-12 ">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+                </svg>
+                <h1 class="font-bold text-lg mb-2">Fast & Free Shipping</h1>
+                <p class="text-sm text-gray-700"> No more waiting! Enjoy lightning-fast delivery at no extra cost,
+                    ensuring your favorite products reach your doorstep quickly and effortlessly.</p>
+            </div>
+        </div>
+    </section>
+
+
+ 
+
+    <!-- New Arrival -->
+    <section id="newarrival">
+        <h1 class="mt-10 font-bold text-2xl m-5">New Arrivals</h1>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 place-items-center m-5">
+
+
+            <!-- Product Card 1 -->
+            <div class="bg-gray-700 rounded-xl relative">
+                <img class="w-56 rounded-xl opacity-60 hover:opacity-30" src="./Images/28.png" alt="New Arrival 1">
+                <button
+                    class="absolute top-28 bg-white text-black text-sm rounded-3xl shadow-lg flex items-center justify-center right-1/4 p-3 hover:bg-gray-200 transition">
+                    Shop Now
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-4 ml-1">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                </button>
+            </div>
+
+
+            <!-- Product Card 2 -->
+            <div class="bg-gray-700 rounded-xl relative ">
+                <img class="w-56 rounded-xl opacity-60 hover:opacity-30" src="./Images/13.png" alt="New Arrival 2">
+                <button
+                    class="absolute top-28 bg-white text-black text-sm rounded-3xl shadow-lg flex items-center justify-center right-1/4 p-3 hover:bg-gray-200 transition">
+                    Shop Now
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 ml-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="bg-gray-700 rounded-xl relative">
+                <img class="w-56 rounded-xl opacity-60 hover:opacity-30" src="./Images/5.png" alt="New Arrival 3">
+                <button
+                    class="absolute top-28 bg-white text-black text-sm rounded-3xl shadow-lg flex items-center justify-center right-1/4 p-3 hover:bg-gray-200 transition">
+                    Shop Now
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 ml-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="bg-gray-700 rounded-xl relative">
+                <img class="w-56 rounded-xl opacity-60 hover:opacity-30" src="./Images/30.png" alt="New Arrival 4">
+                <button
+                    class="absolute top-28 bg-white text-black text-sm rounded-3xl shadow-lg flex items-center justify-center right-1/4 p-3 hover:bg-gray-200 transition">
+                    Shop Now
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 ml-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- Most Wanted -->
+
+
+    <section id="MostWanted">
+        <h1 class="mt-10 font-bold text-2xl m-5">Most Wanted</h1>
+        <div class="flex space-x-4 overflow-x-scroll p-5">
+            <div class="relative flex-shrink-0 ">
+                <img class="absolute w-16" src="./Images/sale1.png" alt="Sale Badge">
+                <img class=" like1 w-48 h-56 " src="./Images/24.png" alt="Product Image">
+                <div class="absolute bottom-2 right-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class=" like1 size-6 w-7 h-7 top-5 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red"
+                        class=" red1 size-6  w-7 h-7 top-5 cursor-pointer hidden">
+                        <path
+                            d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                    </svg>
+
+                </div>
+            </div>
+
+            <div class="relative flex-shrink-0 ">
+                <img class="absolute w-16" src="./Images/sale1.png" alt="Sale Badge">
+                <img class="w-48 h-56 " src="./Images/15.png" alt="Product Image">
+                <div class="absolute bottom-2 right-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class=" like1 size-6 w-7 h-7 top-5  cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red"
+                        class="red1 size-6  w-7 h-7 top-5 cursor-pointer  hidden">
+                        <path
+                            d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="relative flex-shrink-0 ">
+                <img class="absolute w-16" src="./Images/sale1.png" alt="Sale Badge">
+                <img class="w-48 h-56 " src="./Images/23.png" alt="Product Image">
+                <div class="absolute bottom-2 right-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="like1 size-6 w-7 h-7 top-5 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red"
+                        class="red1 size-6  w-7 h-7 top-5 cursor-pointer hidden">
+                        <path
+                            d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="relative flex-shrink-0">
+                <img class="absolute w-16" src="./Images/sale1.png" alt="Sale Badge">
+                <img class="w-48 h-56 " src="./Images/9.png" alt="Product Image">
+                <div class="absolute bottom-2 right-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="like1 size-6 w-7 h-7 top-5 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red"
+                        class="red1 size-6  w-7 h-7 top-5 cursor-pointer hidden">
+                        <path
+                            d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="relative flex-shrink-0 ">
+                <img class="absolute w-16" src="./Images/sale1.png" alt="Sale Badge">
+                <img class="w-48 h-56 " src="./Images/27.png" alt="Product Image">
+                <div class="absolute bottom-2 right-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="like1 size-6 w-7 h-7 top-5 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red"
+                        class="red1 size-6  w-7 h-7 top-5 cursor-pointer hidden">
+                        <path
+                            d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                    </svg>
+                </div>
+            </div>
+
+
+            <div class="relative flex-shrink-0 ">
+                <img class="absolute w-16" src="./Images/sale1.png" alt="Sale Badge">
+                <img class="w-48 h-56 " src="./Images/25.png" alt="Product Image">
+                <div class="absolute bottom-2 right-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="like1 size-6 w-7 h-7 top-5 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red"
+                        class="red1 size-6  w-7 h-7 top-5 cursor-pointer hidden">
+                        <path
+                            d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="relative flex-shrink-0 ">
+                <img class="absolute w-16" src="./Images/sale1.png" alt="Sale Badge">
+                <img class="w-48 h-56 " src="./Images/17.png" alt="Product Image">
+                <div class="absolute bottom-2 right-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="like1 size-6 w-7 h-7 top-5 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red"
+                        class="red1 size-6  w-7 h-7 top-5 cursor-pointer hidden">
+                        <path
+                            d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="relative flex-shrink-0 ">
+                <img class="absolute w-16" src="./Images/sale1.png" alt="Sale Badge">
+                <img class="w-48 h-56 " src="./Images/37.png" alt="Product Image">
+                <div class="absolute bottom-2 right-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="like1 size-6 w-7 h-7 top-5 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red"
+                        class="red1 size-6  w-7 h-7 top-5 cursor-pointer hidden">
+                        <path
+                            d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="relative flex-shrink-0 ">
+                <img class="absolute w-16" src="./Images/sale1.png" alt="Sale Badge">
+                <img class="w-48 h-56 " src="./Images/20.png" alt="Product Image">
+                <div class="absolute bottom-2 right-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="like1 size-6 w-7 h-7 top-5 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red"
+                        class="red1 size-6  w-7 h-7 top-5 cursor-pointer hidden">
+                        <path
+                            d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="relative flex-shrink-0 ">
+                <img class="absolute w-16" src="./Images/sale1.png" alt="Sale Badge">
+                <img class="w-48 h-56 " src="./Images/8.png" alt="Product Image">
+                <div class="absolute bottom-2 right-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="like1 size-6 w-7 h-7 top-5 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red"
+                        class="red1 size-6  w-7 h-7 top-5 cursor-pointer hidden">
+                        <path
+                            d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+
+    <section>
+        <div class=" flex
+    flex-col text-center items-center mt-10">
+            <h1 class="text-2xl font-semibold md:font-bold lg:text-4xl m-5">Join our News Letter</h1>
+            <p class="text-xs md:text-xl mb-5"> Signup for our email newspaper to get exclusive discounts,updates and
+                more</p>
+            <input class=" border w-80 m-5  md:border lg:w-9/12 border-black p-2 mb-5 " placeholder="Enter you Email">
+            <button
+                class="flex items-center justify-center bg-black text-white p-3 rounded-xl mb-5  hover:bg-gray-900  transition">Subscribe
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6 w-6 flex  ">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg></button>
+        </div>
+    </section>
+
+
+
+    <!-- Fotter -->
+
+    <footer class="bg-gray-800 text-white py-10 ">
+        <h1 class="font-bold text-3xl m-5">Nostra</h1>
+        <p class="text-xs md:mt-3 lg:text-lg m-5">
+            Stay trendy with Nostra! Shop stylish, high-quality fashion with fast & free shipping.
+            Elevate your wardrobe effortlessly!
+        </p>
+
+        <div class="flex  gap-6 mt-10 m-5">
+            <i class="fa-brands fa-instagram fa-2x cursor-pointer" style="color: #ffffff; "></i>
+            <i class="fa-brands fa-facebook fa-2x cursor-pointer" style="color: #ffffff; "></i>
+            <i class="fa-brands fa-twitter fa-2x cursor-pointer" style="color: #ffffff; "></i>
+        </div>
+
+        <p class="mt-10 m-5 text-xl">&copy; 2025 Nostra.com</p>
+    </footer>
+
+
+
+
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>
